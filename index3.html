@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="eduford_img/logo-title.png" width="50px">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="./index.html"> <img src="./eduford_img/logo.png"> </a>
+            <div class="nav-links" id="navLinks">
+                <p><ion-icon name="close" onclick="hideMenu()"></ion-icon></p>
+                <ul>
+                    <li><a href="./index2.html">HOME</a></li>
+                    <li><a href="./index3.html">ABOUT</a></li>
+                    <li><a href="./index4.html">COURSE</a></li>
+                    <li><a href="./index5.html">BLOG</a></li>
+                    <li><a href="./index6.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <p><ion-icon name="menu" onclick="showMenu()"></ion-icon></p>
+        </nav>
+        <h1>About Us</h1>  
+    </section>
+
+    <!------------------------------ABOUT US CONTENT---------------------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's Largest University</h1>
+                <p>The Eduford Global Institute of Advanced Computing, proudly recognized as the world's largest university dedicated to computer 
+                   science education. With a sprawling global campus and an unmatched array of resources, we provide a transformative learning 
+                   experience for students from every corner of the globe. Our commitment to excellence, innovation, and collaboration drives 
+                   us forward as we shape the future of technology. Join us at GIAC and unlock the boundless opportunities that await in the 
+                   world of computing.</p>
+                <a href="./course.html" class="hero-btn red-btn">EXPLORE US NOW</a>
+            </div>
+            <div class="about-col">
+                    <img src="./eduford_img/about.jpg">
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------------Footer---------------------------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We're dedicated to excellence in computer science education. With global resources and collaborative learning, we empower 
+           students to innovate and lead in technology. Join us for a <br> transformative journey towards a future of endless possibilities.
+        </p>
+        <div class="about-all">
+                <div class="about-left">
+                    <div>
+                    <span>Facebook</span>
+                    <span><ion-icon name="logo-facebook"></ion-icon></span>
+                </div>
+                <div>
+                    <span>Twitter</span>
+                    <span><ion-icon name="logo-twitter"></ion-icon></span>
+                </div>
+            </div>
+
+            <div class="about-right">
+                <div>
+                    <span>Instagram</span>
+                    <span><ion-icon name="logo-instagram"></ion-icon></span>
+                </div>
+                <div>
+                    <span>Linkedin</span>
+                    <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                </div>
+            </div>
+        </div>
+        <div class="about-bottom">
+            <div>
+                <span>Home</span>
+                <span><a href="#top"><ion-icon name="home"></ion-icon></a></span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JavaScript fo toogle and module import -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

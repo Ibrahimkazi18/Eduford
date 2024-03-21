@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="eduford_img/logo-title.png" width="50px">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="./eduford_img/logo.png"> </a>
+            <div class="nav-links" id="navLinks">
+                <p><ion-icon name="close" onclick="hideMenu()"></ion-icon></p>
+                <ul>
+                    <li><a href="./index2.html">HOME</a></li>
+                    <li><a href="./index3.html">ABOUT</a></li>
+                    <li><a href="./index4.html">COURSE</a></li>
+                    <li><a href="./index5.html">BLOG</a></li>
+                    <li><a href="./index6.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <p><ion-icon name="menu" onclick="showMenu()"></ion-icon></p>
+        </nav>
+        <h1>Our Ceretificates & Online Programs For 2024</h1>  
+    </section>
+
+    <!-- ----------------------------BLOG PAGE CONTENT---------------------------------->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="./eduford_img/cert.webp">
+                <h2>Ceretificates & Online Programs</h2>
+                <p>Unlock your potential with GIAC's cutting-edge certificates and online programs, designed to empower you with essential skills for success in the digital age. Whether you're looking to upskill in specific areas or embark on a new career path, our certificates offer flexible and comprehensive training tailored to your needs.</p>
+                <br>
+                <p>Dive into the world of artificial intelligence, data science, cybersecurity, and more with our range of specialized certificate programs. Led by industry experts and renowned academics, our courses combine theoretical knowledge with hands-on experience, ensuring you're equipped with the latest tools and techniques.</p>
+                <br>
+                <p>With our online programs, you can learn anytime, anywhere, at your own pace. Our interactive platform provides engaging content, practical exercises, and personalized feedback to enhance your learning experience. Whether you're a busy professional or a lifelong learner, GIAC's online programs offer a convenient and accessible way to acquire valuable skills and knowledge.</p>
+                <br>
+                <p>Join thousands of learners from around the world who have transformed their careers with GIAC's certificates and online programs. Take the next step towards your goals and unleash your potential with GIAC today.</p>
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Cybersecurity</span>
+                    <span>35</span>
+                </div>
+                <div>
+                    <span>Big Data Analysis</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Blockchain Technology</span>
+                    <span>27</span>
+                </div>
+            </div>
+        </div>
+        <div class="comment-box">
+            <h3>Leave A Comment</h3>
+
+            <form action="" class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter E-Mail">
+                <textarea rows="5" placeholder="Your Comment"></textarea>
+                <button type="reset" class="hero-btn red-btn">RESET COMMENT</button>
+                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!------------------------Footer---------------------------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We're dedicated to excellence in computer science education. With global resources and collaborative learning, we empower 
+           students to innovate and lead in technology. Join us for a <br> transformative journey towards a future of endless possibilities.
+        </p>
+        <div class="about-all">
+                <div class="about-left">
+                    <div>
+                    <span>Facebook</span>
+                    <span><ion-icon name="logo-facebook"></ion-icon></span>
+                </div>
+                <div>
+                    <span>Twitter</span>
+                    <span><ion-icon name="logo-twitter"></ion-icon></span>
+                </div>
+            </div>
+
+            <div class="about-right">
+                <div>
+                    <span>Instagram</span>
+                    <span><ion-icon name="logo-instagram"></ion-icon></span>
+                </div>
+                <div>
+                    <span>Linkedin</span>
+                    <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                </div>
+            </div>
+        </div>
+        <div class="about-bottom">
+            <div>
+                <span>Home</span>
+                <span><a href="#top"><ion-icon name="home"></ion-icon></a></span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JavaScript fo toogle and module import -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

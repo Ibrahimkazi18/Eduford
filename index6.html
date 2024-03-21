@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="eduford_img/logo-title.png" width="50px">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="./eduford_img/logo.png"> </a>
+            <div class="nav-links" id="navLinks">
+                <p><ion-icon name="close" onclick="hideMenu()"></ion-icon></p>
+                <ul>
+                    <li><a href="./index2.html">HOME</a></li>
+                    <li><a href="./index3.html">ABOUT</a></li>
+                    <li><a href="./index4.html">COURSE</a></li>
+                    <li><a href="./index5.html">BLOG</a></li>
+                    <li><a href="./index6.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <p><ion-icon name="menu" onclick="showMenu()"></ion-icon></p>
+        </nav>
+        <h1>Contact Us</h1>  
+    </section>
+
+    <!------------------------------CONTACT US---------------------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26470.69351340448!2d-73.98198154341232!3d40.68245583957405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b1087680443%3A0x178bf7c600df7a98!2sProspect%20Park!5e0!3m2!1sen!2sin!4v1708254981654!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <ion-icon name="home"></ion-icon>
+                    <span>
+                        <h5>21 B, Baker Street, Near Prospect Park</h5>
+                        <p>Brooklyn, New York</p>
+                    </span>
+                </div>
+                <div>
+                    <ion-icon name="call"></ion-icon>
+                    <span>
+                        <h5>212-998-4500</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                   <ion-icon name="mail"></ion-icon>
+                    <span>
+                        <h5>edufordgiac@gmail.com</h5>
+                        <p>Mail Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter email address" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="reset" class="hero-btn red-btn">RESET MESSAGE</button>
+                    <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------Footer---------------------------------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We're dedicated to excellence in computer science education. With global resources and collaborative learning, we empower 
+           students to innovate and lead in technology. Join us for a <br> transformative journey towards a future of endless possibilities.
+        </p>
+        <div class="about-all">
+                <div class="about-left">
+                    <div>
+                    <span>Facebook</span>
+                    <span><ion-icon name="logo-facebook"></ion-icon></span>
+                </div>
+                <div>
+                    <span>Twitter</span>
+                    <span><ion-icon name="logo-twitter"></ion-icon></span>
+                </div>
+            </div>
+
+            <div class="about-right">
+                <div>
+                    <span>Instagram</span>
+                    <span><ion-icon name="logo-instagram"></ion-icon></span>
+                </div>
+                <div>
+                    <span>Linkedin</span>
+                    <span><ion-icon name="logo-linkedin"></ion-icon></span>
+                </div>
+            </div>
+        </div>
+        <div class="about-bottom">
+            <div>
+                <span>Home</span>
+                <span><a href="#top"><ion-icon name="home"></ion-icon></a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript fo toogle and module import -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
